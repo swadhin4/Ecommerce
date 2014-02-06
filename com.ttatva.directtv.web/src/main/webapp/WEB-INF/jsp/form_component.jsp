@@ -51,7 +51,7 @@
 	  <!-- BEGIN TOP NAVIGATION BAR -->
       <div class="header-inner container">
          <!-- BEGIN LOGO -->  
-         <a class="navbar-brand" href="index.jsp">
+          <a class="navbar-brand" href="<c:url value="/"/>">
          <img src="assets/img/tv-img/logo.png" alt="logo" class="img-responsive" />
          </a>
          <!-- END LOGO -->

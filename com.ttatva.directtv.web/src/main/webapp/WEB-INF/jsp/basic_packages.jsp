@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <!-- BEGIN HEAD -->
@@ -22,8 +23,8 @@
 	  <!-- BEGIN TOP NAVIGATION BAR -->
       <div class="header-inner container">
          <!-- BEGIN LOGO -->  
-         <a class="navbar-brand" href="index.jsp">
-         <img src="../assets/img/tv-img/logo.png" alt="logo" class="img-responsive" />
+          <a class="navbar-brand" href="<c:url value="/"/>">
+         <img src="<c:url value="/resources/img/tv-img/logo.png"/>" alt="logo" class="img-responsive" />
          </a>
          <!-- END LOGO -->
          <!-- BEGIN RESPONSIVE MENU TOGGLER --> 
@@ -111,33 +112,33 @@
 									<div class="caption">ENTERTAINMENT</div>
 								</div>
 								<div class="portlet-body">
-									<p class="package-channels">140+ digital channels</p>
+									<p class="package-channels" id="entTotalChnl">140+ digital channels</p>
 									<hr>
 									<div class="clearfix" style="margin-bottom:8px">
 										<span class="pull-left">
 											<sup class="supone">$</sup>
-											<span style="font-size:28px">29</span>
-											<sup class="suptwo">99</sup>
+											<span style="font-size:28px" id="entMonthlyNum">29</span>
+											<sup class="suptwo" id="entMonthlyDen">99</sup>
 											<sub class="subone">mo</sub>
 										</span>
 										<span class="pull-right" style="background:#c0010a; padding-left:4px;">
 											<sup class="supthree">$</sup>
-											<span style="font-size:28px; color:#ffea00;">24</span>
-											<sup  class="supfour">99</sup>
+											<span style="font-size:28px; color:#ffea00;" id="entOfferNum">24</span>
+											<sup  class="supfour" id="entOfferDen">99</sup>
 											<sub class="subtwo">mo</sub>
 										</span>
 									</div>
 									<p class="package-agreement">FOR 12 MONTHS WITH 24-MO. AGREEMENT</p>
-									<a class="btn btn-warning" type="button" href="receivers_entertainment_hd.jsp">Select</a>
+									<a class="btn btn-warning" type="button" href="receivers/ent/hd">Select</a>
 								</div>
 							</div>
 							<!--<img src="../assets/img/tv-img/call_now.png">-->
 							<h3 class="form-section">INCLUDES</h3>
-							<img src="../assets/img/tv-img/description_entertainment.jpg" style="margin-bottom:10px;">
+							<img src="<c:url value="/resources/img/tv-img/description_entertainment.jpg"/>" style="margin-bottom:10px;">
 							<ul>
 								<li> 140+ digital channels</li>
 								
-								<li> <em class="free"> FREE</em> for 3 months <img alt="" src="../assets/img/tv-img/incl_premier_premium_channels-wh.png"></li>
+								<li> <em class="free"> FREE</em> for 3 months <img alt="" src="<c:url value="/resources/img/tv-img/incl_premier_premium_channels-wh.png"/>"></li>
 								
 								<li>Access to thousands of titles On Demand.</li>
 
@@ -182,13 +183,13 @@
 							</div>
 							<!--<img src="../assets/img/tv-img/call_now.png">-->
 							<h3 class="form-section">INCLUDES</h3>
-							<img src="../assets/img/tv-img/description_choice.jpg" style="margin-bottom:10px;">
+							<img src="<c:url value="/resources/img/tv-img/description_choice.jpg"/>" style="margin-bottom:10px;">
 							<ul>
 								<li> 150+ digital channels</li>
 								
-								<li> <em class="free"> FREE</em> for 3 months <img alt="" src="../assets/img/tv-img/incl_premier_premium_channels-wh.png"></li>
+								<li> <em class="free"> FREE</em> for 3 months <img alt="" src="<c:url value="/resources/img/tv-img/incl_premier_premium_channels-wh.png"/>"></li>
 							
-								<li><img align="right" src="../assets/img/tv-img/pkg__NFL_Sunday_Ticket.png"><em style="color: rgb(255, 0, 0); font-style: normal; font-weight: bold;">2014 NFL SUNDAY TICKET</em> season included at no extra charge.</li>
+								<li><img align="right" src="<c:url value="/resources/img/tv-img/pkg__NFL_Sunday_Ticket.png"/>"><em style="color: rgb(255, 0, 0); font-style: normal; font-weight: bold;">2014 NFL SUNDAY TICKET</em> season included at no extra charge.</li>
 								
 								<li>Access to thousands of titles On Demand. </li>
 								
@@ -234,13 +235,13 @@
 							</div>
 							<!--<img src="../assets/img/tv-img/call_now.png">-->
 							<h3 class="form-section">INCLUDES</h3>
-							<img src="../assets/img/tv-img/description_xtra.jpg" style="margin-bottom:10px;">
+							<img src="<c:url value="/resources/img/tv-img/description_xtra.jpg"/>" style="margin-bottom:10px;">
 							<ul>
 								<li> 205+ digital channels</li>
 								
-								<li> <em class="free"> FREE</em> for 3 months <img alt="" src="../assets/img/tv-img/incl_premier_premium_channels-wh.png"></li>
+								<li> <em class="free"> FREE</em> for 3 months <img alt="" src="<c:url value="/resources/img/tv-img/incl_premier_premium_channels-wh.png"/>"></li>
 							
-								<li><img align="right" src="../assets/img/tv-img/pkg__NFL_Sunday_Ticket.png"><em style="color: rgb(255, 0, 0); font-style: normal; font-weight: bold;">2014 NFL SUNDAY TICKET</em> season included at no extra charge.</li>
+								<li><img align="right" src="<c:url value="/resources/img/tv-img/pkg__NFL_Sunday_Ticket.png"/>"><em style="color: rgb(255, 0, 0); font-style: normal; font-weight: bold;">2014 NFL SUNDAY TICKET</em> season included at no extra charge.</li>
 								
 								<li>Access to thousands of titles On Demand. </li>
 								
@@ -286,13 +287,13 @@
 							</div>
 							<!--<img src="../assets/img/tv-img/call_now.png">-->
 							<h3 class="form-section">INCLUDES</h3>
-							<img src="../assets/img/tv-img/description_choice.jpg" style="margin-bottom:10px;">
+							<img src="<c:url value="/resources/img/tv-img/description_choice.jpg"/>" style="margin-bottom:10px;">
 							<ul>
 								<li> 225+ digital channels</li>
 								
-								<li> <em class="free"> FREE</em> for 3 months <img alt="" src="../assets/img/tv-img/incl_premier_premium_channels-wh.png"></li>
+								<li> <em class="free"> FREE</em> for 3 months <img alt="" src="<c:url value="/resources/img/tv-img/incl_premier_premium_channels-wh.png"/>"></li>
 							
-								<li><img align="right" src="../assets/img/tv-img/pkg__NFL_Sunday_Ticket.png"><em style="color: rgb(255, 0, 0); font-style: normal; font-weight: bold;">2014 NFL SUNDAY TICKET</em> season included at no extra charge.</li>
+								<li><img align="right" src="<c:url value="/resources/img/tv-img/pkg__NFL_Sunday_Ticket.png"/>"><em style="color: rgb(255, 0, 0); font-style: normal; font-weight: bold;">2014 NFL SUNDAY TICKET</em> season included at no extra charge.</li>
 								
 								<li>Access to thousands of titles On Demand. </li>
 								
@@ -338,13 +339,13 @@
 							</div>
 							<!--<img src="../assets/img/tv-img/call_now.png">-->
 							<h3 class="form-section">INCLUDES</h3>
-							<img src="../assets/img/tv-img/description_premier.jpg" style="margin-bottom:10px;">
+							<img src="<c:url value="/resources/img/tv-img/description_premier.jpg"/>" style="margin-bottom:10px;">
 							<ul>
 								<li> 285+ digital channels</li>
 								
-								<li> All premium networks included  <img src="../assets/img/tv-img/incl_premier_premium_channels-wh.png"></li>
+								<li> All premium networks included  <img src="<c:url value="/resources/img/tv-img/incl_premier_premium_channels-wh.png"/>"></li>
 							
-								<li><img align="right" src="../assets/img/tv-img/pkg__NFL_Sunday_Ticket.png"><em class="free">2014 NFL SUNDAY TICKET</em> season included at no extra charge.</li>
+								<li><img align="right" src="<c:url value="/resources/img/tv-img/pkg__NFL_Sunday_Ticket.png"/>"><em class="free">2014 NFL SUNDAY TICKET</em> season included at no extra charge.</li>
 								
 								<li>Access to thousands of titles On Demand. </li>
 								
@@ -436,19 +437,19 @@
 										<p>Channel Available in other Packages</p>
 									</div>
 									<div class="channel">
-										<img src="../assets/img/tv-img/A&E_SD.gif" alt="">
+										<img src="<c:url value="/resources/img/tv-img/A&E_SD.gif"/>" alt="">
 										<p>A&amp;E</p>
 									</div>
 									<div class="channel">
-										<img src="../assets/img/tv-img/A&E_HD.gif" alt="">
+										<img src="<c:url value="/resources/img/tv-img/A&E_HD.gif"/>" alt="">
 										<p>A&amp;EHD</p>
 									</div>
 									<div class="channel">
-										<img src="../assets/img/tv-img/ABCF_SD.gif" alt="">
+										<img src="<c:url value="/resources/img/tv-img/ABCF_SD.gif"/>" alt="">
 										<p>ABCF</p>
 									</div>
 									<div class="channel">
-										<img src="../assets/img/tv-img/ABCFHD_HD.gif" alt="">
+										<img src="<c:url value="/resources/img/tv-img/ABCFHD_HD.gif"/>" alt="">
 										<p>ABCFHD</p>
 									</div>
 								</div>
@@ -463,26 +464,26 @@
 									<p class="package-channels">150+ digital channels</p>
 									<hr>
 									<div class="channel">
-										<img src="../assets/img/tv-img/3net_HD.gif" alt="">
+										<img src="<c:url value="/resources/img/tv-img/3net_HD.gif"/>" alt="">
 										<p>3net</p>
 									</div>
 									<div class="channel">
 										<p>Channel Available in other Packages</p>
 									</div>
 									<div class="channel">
-										<img src="../assets/img/tv-img/A&E_SD.gif" alt="">
+										<img src="<c:url value="/resources/img/tv-img/A&E_SD.gif"/>" alt="">
 										<p>A&amp;E</p>
 									</div>
 									<div class="channel">
-										<img src="../assets/img/tv-img/A&E_HD.gif" alt="">
+										<img src="<c:url value="/resources/img/tv-img/A&E_HD.gif"/>" alt="">
 										<p>A&amp;EHD</p>
 									</div>
 									<div class="channel">
-										<img src="../assets/img/tv-img/ABCF_SD.gif" alt="">
+										<img src="<c:url value="/resources/img/tv-img/ABCF_SD.gif"/>" alt="">
 										<p>ABCF</p>
 									</div>
 									<div class="channel">
-										<img src="../assets/img/tv-img/ABCFHD_HD.gif" alt="">
+										<img src="<c:url value="/resources/img/tv-img/ABCFHD_HD.gif"/>" alt="">
 										<p>ABCFHD</p>
 									</div>
 								</div>
@@ -497,26 +498,26 @@
 									<p class="package-channels">205+ digital channels</p>
 									<hr>
 									<div class="channel">
-										<img src="../assets/img/tv-img/3net_HD.gif" alt="">
+										<img src="<c:url value="/resources/img/tv-img/3net_HD.gif"/>" alt="">
 										<p>3net</p>
 									</div>
 									<div class="channel">
 										<p>Channel Available in other Packages</p>
 									</div>
 									<div class="channel">
-										<img src="../assets/img/tv-img/A&E_SD.gif" alt="">
+										<img src="<c:url value="/resources/img/tv-img/A&E_SD.gif"/>" alt="">
 										<p>A&amp;E</p>
 									</div>
 									<div class="channel">
-										<img src="../assets/img/tv-img/A&E_HD.gif" alt="">
+										<img src="<c:url value="/resources/img/tv-img/A&E_HD.gif"/>" alt="">
 										<p>A&amp;EHD</p>
 									</div>
 									<div class="channel">
-										<img src="../assets/img/tv-img/ABCF_SD.gif" alt="">
+										<img src="<c:url value="/resources/img/tv-img/ABCF_SD.gif"/>" alt="">
 										<p>ABCF</p>
 									</div>
 									<div class="channel">
-										<img src="../assets/img/tv-img/ABCFHD_HD.gif" alt="">
+										<img src="<c:url value="/resources/img/tv-img/ABCFHD_HD.gif"/>" alt="">
 										<p>ABCFHD</p>
 									</div>
 								</div>
@@ -531,26 +532,26 @@
 									<p class="package-channels">225+ digital channels</p>
 									<hr>
 									<div class="channel">
-										<img src="../assets/img/tv-img/3net_HD.gif" alt="">
+										<img src="<c:url value="/resources/img/tv-img/3net_HD.gif"/>" alt="">
 										<p>3net</p>
 									</div>
 									<div class="channel">
 										<p>Channel Available in other Packages</p>
 									</div>
 									<div class="channel">
-										<img src="../assets/img/tv-img/A&E_SD.gif" alt="">
+										<img src="<c:url value="/resources/img/tv-img/A&E_SD.gif"/>" alt="">
 										<p>A&amp;E</p>
 									</div>
 									<div class="channel">
-										<img src="../assets/img/tv-img/A&E_HD.gif" alt="">
+										<img src="<c:url value="/resources/img/tv-img/A&E_HD.gif"/>" alt="">
 										<p>A&amp;EHD</p>
 									</div>
 									<div class="channel">
-										<img src="../assets/img/tv-img/ABCF_SD.gif" alt="">
+										<img src="<c:url value="/resources/img/tv-img/ABCF_SD.gif"/>" alt="">
 										<p>ABCF</p>
 									</div>
 									<div class="channel">
-										<img src="../assets/img/tv-img/ABCFHD_HD.gif" alt="">
+										<img src="<c:url value="/resources/img/tv-img/ABCFHD_HD.gif"/>" alt="">
 										<p>ABCFHD</p>
 									</div>
 								</div>
@@ -565,27 +566,27 @@
 									<p class="package-channels">285+ digital channels</p>
 									<hr>
 									<div class="channel">
-										<img src="../assets/img/tv-img/3net_HD.gif" alt="">
+										<img src="<c:url value="/resources/img/tv-img/3net_HD.gif"/>" alt="">
 										<p>3net</p>
 									</div>
 									<div class="channel">
-										<img src="../assets/img/tv-img/5MAX_HD.gif" alt="">
+										<img src="<c:url value="/resources/img/tv-img/5MAX_HD.gif"/>" alt="">
 										<p>5MAXHD</p>
 									</div>
 									<div class="channel">
-										<img src="../assets/img/tv-img/A&E_SD.gif" alt="">
+										<img src="<c:url value="/resources/img/tv-img/A&E_SD.gif"/>" alt="">
 										<p>A&amp;E</p>
 									</div>
 									<div class="channel">
-										<img src="../assets/img/tv-img/A&E_HD.gif" alt="">
+										<img src="<c:url value="/resources/img/tv-img/A&E_HD.gif"/>" alt="">
 										<p>A&amp;EHD</p>
 									</div>
 									<div class="channel">
-										<img src="../assets/img/tv-img/ABCF_SD.gif" alt="">
+										<img src="<c:url value="/resources/img/tv-img/ABCF_SD.gif"/>" alt="">
 										<p>ABCF</p>
 									</div>
 									<div class="channel">
-										<img src="../assets/img/tv-img/ABCFHD_HD.gif" alt="">
+										<img src="<c:url value="/resources/img/tv-img/ABCFHD_HD.gif"/>" alt="">
 										<p>ABCFHD</p>
 									</div>
 								</div>
@@ -662,19 +663,19 @@
 												   <tr>
 													  <th></th>
 													  <th style="text-align:center">
-														<img src="../assets/img/tv-img/img__devices_computer.png" alt="" ><br>Computer (Mac & PC)
+														<img src="<c:url value="/resources/img/tv-img/img__devices_computer.png"/>" alt="" ><br>Computer (Mac & PC)
 													  </th>
 													  <th style="text-align:center">
-														<img src="../assets/img/tv-img/img__devices_ipad.png" alt=""><br>iPad
+														<img src="<c:url value="/resources/img/tv-img/img__devices_ipad.png"/>" alt=""><br>iPad
 													  </th>
 													  <th style="text-align:center">
-														<img src="../assets/img/tv-img/img__devices_androidtablet.png" alt=""><br>Android Tablet
+														<img src="<c:url value="/resources/img/tv-img/img__devices_androidtablet.png"/>" alt=""><br>Android Tablet
 													  </th>
 													  <th style="text-align:center">
-														<img src="../assets/img/tv-img/img__devices_iphone.png" alt=""><br>iPhone
+														<img src="<c:url value="/resources/img/tv-img/img__devices_iphone.png"/>" alt=""><br>iPhone
 													  </th>
 													  <th style="text-align:center">
-														<img src="../assets/img/tv-img/img__devices_androidphone.png" alt=""><br>Android Phone
+														<img src="<c:url value="/resources/img/tv-img/img__devices_androidphone.png"/>" alt=""><br>Android Phone
 													  </th>
 												   </tr>
 												</thead>
@@ -747,7 +748,7 @@
    </div>
    <!-- END CONTAINER -->
    </div></div>
-   
+   <input type="hidden" value="${zipCode}" id="currentZipCode"/>
    <!-- BEGIN FOOTER -->
    <div class="footer">
       <div class="container">
@@ -761,26 +762,44 @@
    <!-- END FOOTER -->
    
    
-   <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+ <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
    <!-- BEGIN CORE PLUGINS -->   
    <!--[if lt IE 9]>
    <script src="../assets/plugins/respond.min.js"></script>
    <script src="../assets/plugins/excanvas.min.js"></script> 
    <![endif]-->   
-   <script src="../assets/plugins/jquery-1.10.2.min.js" type="text/javascript"></script>
-   <script src="../assets/plugins/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
-   <script src="../assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-   <script src="../assets/plugins/bootstrap-hover-dropdown/twitter-bootstrap-hover-dropdown.min.js" type="text/javascript" ></script>
-   <script src="../assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
-   <script src="../assets/plugins/jquery.blockui.min.js" type="text/javascript"></script>  
-   <script src="../assets/plugins/jquery.cookie.min.js" type="text/javascript"></script>
-   <script src="../assets/plugins/uniform/jquery.uniform.min.js" type="text/javascript" ></script>
+   <script src="<c:url value="/resources/plugins/jquery-1.10.2.min.js"/>" type="text/javascript"></script>
+   <script src="<c:url value="/resources/plugins/jquery-migrate-1.2.1.min.js"/>" type="text/javascript"></script>
+   <script src="<c:url value="/resources/plugins/bootstrap/js/bootstrap.min.js"/>" type="text/javascript"></script>
+   <script src="<c:url value="/resources/plugins/bootstrap-hover-dropdown/twitter-bootstrap-hover-dropdown.min.js"/>" type="text/javascript" ></script>
+   <script src="<c:url value="/resources/plugins/jquery-slimscroll/jquery.slimscroll.min.js"/>" type="text/javascript"></script>
+   <script src="<c:url value="/resources/plugins/jquery.blockui.min.js"/>" type="text/javascript"></script>  
+   <script src="<c:url value="/resources/plugins/jquery.cookie.min.js"/>" type="text/javascript"></script>
+   <script src="<c:url value="/resources/plugins/uniform/jquery.uniform.min.js"/>" type="text/javascript" ></script>
    <!-- END CORE PLUGINS -->
-   <script src="../assets/scripts/app.js"></script>      
+   <script src="<c:url value="/resources/scripts/app.js"/>"></script>      
    <script>
       jQuery(document).ready(function() {    
          App.init();
+         var currentZipCode = jQuery("#currentZipCode").val();
+		computePackages(currentZipCode);
       });
+      function computePackages(currentZipCode){
+    	  jQuery.ajax({
+    			type : "get",
+    			url : "package/zipcode/"+currentZipCode,
+    			success : function(data, textStatus) {
+    				jQuery("#entTotalChnl").text(data.description);
+    				jQuery("#entMonthlyNum").text(data.monthlyPrice.numerator);
+    				jQuery("#entMonthlyDen").text(data.monthlyPrice.denominator);
+    				jQuery("#entOfferNum").text(data.offerPrice.numerator);
+    				jQuery("#entOfferDen").text(data.offerPrice.denominator);
+    			},
+    			error : function(textStatus, errorThrown) {
+    				alert("Invalid Zip Code.");
+    			}
+    		});
+      }
    </script>
    <!-- END JAVASCRIPTS -->
 </body>

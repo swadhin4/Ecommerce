@@ -51,8 +51,8 @@
 	  <!-- BEGIN TOP NAVIGATION BAR -->
       <div class="header-inner container">
          <!-- BEGIN LOGO -->  
-         <a class="navbar-brand" href="index.jsp">
-         <img src="../assets/img/tv-img/logo.png" alt="logo" class="img-responsive" />
+          <a class="navbar-brand" href="<c:url value="/"/>">
+         <img src="<c:url value="/resources/img/tv-img/logo.png"/>" alt="logo" class="img-responsive" />
          </a>
          <!-- END LOGO -->
          <!-- BEGIN RESPONSIVE MENU TOGGLER --> 

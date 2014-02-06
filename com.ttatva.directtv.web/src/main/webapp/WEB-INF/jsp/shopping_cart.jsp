@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <!-- BEGIN HEAD -->
@@ -13,17 +14,17 @@
    <meta content="" name="author" />
    <meta name="MobileOptimized" content="320">
    <!-- BEGIN GLOBAL MANDATORY STYLES -->          
-   <link href="../assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-   <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-   <link href="../assets/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+   <link href="<c:url value="/resources/plugins/font-awesome/css/font-awesome.min.css"/>" rel="stylesheet" type="text/css"/>
+   <link href="<c:url value="/resources/plugins/bootstrap/css/bootstrap.min.css"/>" rel="stylesheet" type="text/css"/>
+   <link href="<c:url value="/resources/plugins/uniform/css/uniform.default.css"/>" rel="stylesheet" type="text/css"/>
    <!-- END GLOBAL MANDATORY STYLES -->
    <!-- BEGIN THEME STYLES --> 
-   <link href="../assets/css/style-metronic.css" rel="stylesheet" type="text/css"/>
-   <link href="../assets/css/style.css" rel="stylesheet" type="text/css"/>
-   <link href="../assets/css/style-responsive.css" rel="stylesheet" type="text/css"/>
-   <link href="../assets/css/plugins.css" rel="stylesheet" type="text/css"/>
-   <link href="../assets/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color"/>
-   <link href="../assets/css/custom.css" rel="stylesheet" type="text/css"/>
+   <link href="<c:url value="/resources/css/style-metronic.css"/>" rel="stylesheet" type="text/css"/>
+   <link href="<c:url value="/resources/css/style.css"/>" rel="stylesheet" type="text/css"/>
+   <link href="<c:url value="/resources/css/style-responsive.css"/>" rel="stylesheet" type="text/css"/>
+   <link href="<c:url value="/resources/css/plugins.css"/>" rel="stylesheet" type="text/css"/>
+   <link href="<c:url value="/resources/css/themes/default.css"/>" rel="stylesheet" type="text/css" id="style_color"/>
+   <link href="<c:url value="/resources/css/custom.css"/>" rel="stylesheet" type="text/css"/>
    <!-- END THEME STYLES -->
    <link rel="shortcut icon" href="favicon.ico" />
 </head>
@@ -35,13 +36,13 @@
 	  <!-- BEGIN TOP NAVIGATION BAR -->
       <div class="header-inner container">
          <!-- BEGIN LOGO -->  
-         <a class="navbar-brand" href="index.jsp">
-         <img src="../assets/img/tv-img/logo.png" alt="logo" class="img-responsive" />
+          <a class="navbar-brand" href="<c:url value="/"/>">
+         <img src="<c:url value="/resources/img/tv-img/logo.png"/>" alt="logo" class="img-responsive" />
          </a>
          <!-- END LOGO -->
          <!-- BEGIN RESPONSIVE MENU TOGGLER --> 
          <!--<a href="javascript:;" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-         <img src="../assets/img/menu-toggler.png" alt="" />
+         <img src="<c:url value="/resources/img/menu-toggler.png"/>" alt="" />
          </a> -->
          <!-- END RESPONSIVE MENU TOGGLER -->
    	   </div>
@@ -362,19 +363,19 @@
    <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
    <!-- BEGIN CORE PLUGINS -->   
    <!--[if lt IE 9]>
-   <script src="../assets/plugins/respond.min.js"></script>
-   <script src="../assets/plugins/excanvas.min.js"></script> 
+   <script src="<c:url value="/resources/plugins/respond.min.js"/>"></script>
+   <script src="<c:url value="/resources/plugins/excanvas.min.js"/>"></script> 
    <![endif]-->   
-   <script src="../assets/plugins/jquery-1.10.2.min.js" type="text/javascript"></script>
-   <script src="../assets/plugins/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
-   <script src="../assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-   <script src="../assets/plugins/bootstrap-hover-dropdown/twitter-bootstrap-hover-dropdown.min.js" type="text/javascript" ></script>
-   <script src="../assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
-   <script src="../assets/plugins/jquery.blockui.min.js" type="text/javascript"></script>  
-   <script src="../assets/plugins/jquery.cookie.min.js" type="text/javascript"></script>
-   <script src="../assets/plugins/uniform/jquery.uniform.min.js" type="text/javascript" ></script>
+   <script src="<c:url value="/resources/plugins/jquery-1.10.2.min.js"/>" type="text/javascript"></script>
+   <script src="<c:url value="/resources/plugins/jquery-migrate-1.2.1.min.js"/>" type="text/javascript"></script>
+   <script src="<c:url value="/resources/plugins/bootstrap/js/bootstrap.min.js"/>" type="text/javascript"></script>
+   <script src="<c:url value="/resources/plugins/bootstrap-hover-dropdown/twitter-bootstrap-hover-dropdown.min.js"/>" type="text/javascript" ></script>
+   <script src="<c:url value="/resources/plugins/jquery-slimscroll/jquery.slimscroll.min.js"/>" type="text/javascript"></script>
+   <script src="<c:url value="/resources/plugins/jquery.blockui.min.js"/>" type="text/javascript"></script>  
+   <script src="<c:url value="/resources/plugins/jquery.cookie.min.js"/>" type="text/javascript"></script>
+   <script src="<c:url value="/resources/plugins/uniform/jquery.uniform.min.js"/>" type="text/javascript" ></script>
    <!-- END CORE PLUGINS -->
-   <script src="../assets/scripts/app.js"></script>      
+   <script src="<c:url value="/resources/scripts/app.js"/>"></script>      
    <script>
       jQuery(document).ready(function() {    
          App.init();

@@ -83,7 +83,7 @@
             <!-- BEGIN PAGE CONTENT-->
 			 <div class="row">
 				<div class="col-md-12">
-					<form action="basic_packages.jsp" class="form-horizontal" id="submit_form">
+					<form action="basicpkg" class="form-horizontal" id="submit_form" method="POST">
 						<div class="portlet box blue">
 						   <div class="portlet-title">
 							  <div class="caption"><i class="icon-reorder"></i>Zip Code</div>
@@ -95,13 +95,13 @@
 									<div class="form-group">
 									  <label class="col-md-2 control-label">Zip Code</label>
 									  <div class="col-md-4" >
-										 <input type="text" placeholder="" class="form-control">
+										 <input type="text" placeholder="" name="zipCode" class="form-control">
 									  </div>
 									</div>
 									<div class="form-group">
 									  <label class="col-md-2 control-label">County Code</label>
 									  <div class="col-md-4" >
-										 <input type="text" placeholder="" class="form-control">
+										 <input type="text" placeholder="" name="countryCode" class="form-control">
 									  </div>
 									</div>		
 								</div>										
