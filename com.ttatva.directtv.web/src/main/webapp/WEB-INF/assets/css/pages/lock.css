@@ -1,0 +1,259 @@
+/***
+Lock Page
+***/
+body {
+	background-color: #ddd;
+	padding: 0;
+	margin: 0;
+}
+
+.page-lock {
+   top: 50%;
+   left: 50%;
+   position: absolute;
+   margin-top: -140px;
+   margin-left: -260px;
+}
+
+.page-lock .page-logo {
+	margin-bottom: 15px;
+}
+
+.page-lock .page-body {	
+   width: 500px;
+   padding: 10px;
+   background: url(../../img/bg-white-lock.png) repeat;
+}
+
+.page-lock .page-body:after,
+.page-lock .page-body:before {
+	display: table;
+	content: "";
+	line-height: 0;
+}
+
+.page-lock .page-body:after {
+	clear: both;
+}
+
+.page-lock .page-footer {
+   margin-top: 10px;
+   text-align: left !important;
+   font-size: 12px;
+   color: #eaeaea;
+}
+
+.page-lock img.page-lock-img {
+	float: left;
+	width: 200px;
+	height: auto;
+}
+
+.page-lock .page-lock-info {
+	padding-left: 10px;
+	float: right;
+	width: 280px;
+}
+
+.page-lock .page-lock-info h1 {
+	margin-top: -5px;
+	font-weight: 300;
+	color: #fff;
+	font-size: 28px;
+	line-height: 32px;
+	margin-bottom: 5px;
+}
+
+.page-lock .page-lock-info .email {
+	color: #eee;
+	display: block;
+	font-size: 14px;
+	line-height: 14px;
+	margin-bottom: 10px;
+} 
+
+.page-lock .page-lock-info .locked {
+	color: #333;
+	font-size: 14px;	
+	line-height: 14px;
+	font-style: normal;
+}
+
+.page-lock .page-lock-info form {
+	margin: 28px 0;
+}
+
+.page-lock .page-lock-info input {
+	background: #fff;
+}
+
+.page-lock .relogin {
+	margin-top: 10px;
+}
+
+.page-lock .relogin a {
+	color: #e1e1e1;
+}
+
+/*Responsive*/
+@media (max-width: 768px) {
+	.page-lock {
+	   top:0px;
+	   width: 280px;
+	   margin-top: 20px;
+	   margin-left: -140px;
+	}	
+
+	.page-lock .page-body {	
+		padding: 10px;
+	    text-align: center;	
+		width: 280px;
+	}
+
+	.page-lock img.page-lock-img {
+		float: none !important;
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	.page-lock .page-lock-info {
+		float: none !important;
+		width: 260px;		
+		margin: 0 auto;
+	}
+
+	.page-lock .page-lock-info input {
+		width: 200px !important;
+	}
+}
+
+/** For login **/
+
+.page-login {
+   top: 50%;
+   left: 50%;
+   position: absolute;
+   margin-top: -170px;
+   margin-left: -260px;
+}
+
+.page-login .page-logo {
+	margin-bottom: 15px;
+}
+
+.page-login .page-body {	
+   width: 400px;
+   padding: 10px;
+   background: url(../../img/bg-white-lock.png) repeat;
+}
+
+.page-login .page-body:after,
+.page-login .page-body:before {
+	display: table;
+	content: "";
+	line-height: 0;
+}
+
+.page-login .page-body:after {
+	clear: both;
+}
+
+.page-login .page-footer {
+   margin-top: 10px;
+   text-align: left !important;
+   font-size: 12px;
+   color: #eaeaea;
+}
+
+.page-login .page-lock-info .login-form {
+    margin: 0;
+    padding: 0;
+}
+
+.page-login .page-lock-info .form-actions {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0 none;
+    clear: both;
+    margin-left: -60px;
+    margin-right: -30px;
+    padding: 0 40px 25px;
+}
+
+.page-login .page-lock-info {
+	padding-left: 10px;
+	float: left;
+	width: 280px;
+}
+
+.page-login .page-lock-info h1 {
+	font-weight: 300;
+	color: #fff;
+	font-size: 24px;
+	line-height: 32px;
+	margin-bottom: 20px;
+}
+
+.page-login .page-lock-info .form-actions .checkbox {
+    display: inline-block;
+    margin-top: 8px;
+}
+.lpage-login .page-lock-info .form-actions .checkbox {
+    margin-left: 0;
+    padding-left: 0;
+}
+.page-login .page-lock-info label {
+    color: #FFFFFF;
+}
+.page-login .checkbox {
+    font-size: 13px;
+}
+
+.page-login .page-lock-info form {
+	margin: 28px 0;
+}
+
+.page-login .page-lock-info input {
+	background: #fff;
+}
+
+.page-login .relogin {
+	margin-top: 10px;
+}
+
+.page-login .relogin a {
+	color: #e1e1e1;
+}
+
+/*Responsive*/
+@media (max-width: 768px) {
+	.page-login {
+	   top:0px;
+	   width: 280px;
+	   margin-top: 20px;
+	   margin-left: -140px;
+	}	
+
+	.page-login .page-body {	
+		padding: 10px;
+	    text-align: center;	
+		width: 280px;
+	}
+
+	/*.page-login img.page-lock-img {
+		float: none !important;
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: 15px;
+	}*/
+	.page-login .page-lock-info {
+		float: none !important;
+		width: 260px;		
+		margin: 0 auto;
+	}
+
+	.page-login .page-lock-info input {
+		width: 200px !important;
+	}
+}
